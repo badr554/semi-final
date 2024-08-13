@@ -259,6 +259,23 @@ top: 109rem;
    border: none;
    position: relative;
 }
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.5s , ease;
+    width: 100%;
+    background-color: black;
+    height: 0;
+    overflow: hidden;
+}
+
+.product-card:hover .overlay{
+    transition: .35s ease;
+    height: 10%;
+}
+
 .likes{
     display: flex;
     flex-direction: column;
@@ -279,6 +296,10 @@ top: 109rem;
     color:#DB4444;
     margin-top: 10px;
    font-weight: 900;
+}
+.overlay p{
+    color: #F5F5F5;
+    margin-bottom: 5px;
 }
 .product-card .card1{
     width: 115px;
